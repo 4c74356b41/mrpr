@@ -22,3 +22,117 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.container {
+    z-index: 2;
+    width: 100%;
+}
+
+.jumbotron {
+    background-color: aquamarine;
+    margin-bottom: 0px;
+}
+
+.mr-zero-block {
+    background-color: aquamarine;
+    position: relative;
+    z-index: 7;
+}
+
+.mr-zero-block:after {
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px aquamarine;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.mr-first-block {
+    background-color: #4CC4FF;
+    position: relative;
+    z-index: 6;
+}
+.mr-first-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #4CC4FF;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+.mr-second-block {
+    background-color: grey;
+    position: relative;
+    z-index: 5;
+}
+.mr-second-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px grey;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+.mr-third-block {
+    background-color: #C1E1A6;
+    position: relative;
+    z-index: 4;
+}
+.mr-third-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #C1E1A6;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+.mr-fourth-block {
+    background-color: #585858;
+    position: relative;
+    z-index: 3;
+}
+.mr-fourth-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #585858;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+.mr-fifth-block {
+    background-color: #FF9009;
+    position: relative;
+    z-index: 2;
+}
+.mr-fifth-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #FF9009;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
