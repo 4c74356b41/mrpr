@@ -28,8 +28,24 @@ textarea {
     width: 100%;
 }
 
+.circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.jumbotron {
+    padding: 15px
+}
+
 .mr-zero-block {
-    background-color: aquamarine;
+    background-color: #39ade2;
     position: relative;
     z-index: 7;
 }
@@ -41,13 +57,13 @@ textarea {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px aquamarine;
+    border-top: solid 25px #39ade2;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
 
 .mr-first-block {
-    background-color: #4CC4FF;
+    background-color: white;
     position: relative;
     z-index: 6;
 }
@@ -59,12 +75,12 @@ textarea {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px #4CC4FF;
+    border-top: solid 25px white;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
 .mr-second-block {
-    background-color: grey;
+    background-color: #6acff7;
     position: relative;
     z-index: 5;
 }
@@ -76,12 +92,12 @@ textarea {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px grey;
+    border-top: solid 25px #6acff7;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
 .mr-third-block {
-    background-color: #C1E1A6;
+    background-color: white;
     position: relative;
     z-index: 4;
 }
@@ -93,12 +109,12 @@ textarea {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px #C1E1A6;
+    border-top: solid 25px white;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
 .mr-fourth-block {
-    background-color: #585858;
+    background-color: #ebf8fe;
     position: relative;
     z-index: 3;
 }
@@ -110,7 +126,7 @@ textarea {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px #585858;
+    border-top: solid 25px #ebf8fe;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
