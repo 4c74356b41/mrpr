@@ -28,6 +28,10 @@ textarea {
     width: 100%;
 }
 
+.carousel {
+    padding: 20px
+}
+
 .circular {
     width: 300px;
     height: 300px;
@@ -38,10 +42,6 @@ textarea {
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-.jumbotron {
-    padding: 15px
 }
 
 .mr-zero-block {
