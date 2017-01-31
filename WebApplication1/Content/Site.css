@@ -25,7 +25,7 @@ textarea {
 
 .container {
     z-index: 2;
-    width: 100%;
+    width: 90%;
 }
 
 .carousel {
@@ -42,6 +42,11 @@ textarea {
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    text-align: center;
+}
+
+.deputat {
+    background-image: url(../Content/Images/un1.jpg)
 }
 
 .mr-zero-block {
@@ -160,7 +165,8 @@ textarea {
     float: right;
     margin-left: 15px;
 }
-    /* Icon when the collapsible content is hidden */
+    
 .btn.collapsed:after {
+    /* Icon when the collapsible content is hidden */
     content: "\e080";
 }
