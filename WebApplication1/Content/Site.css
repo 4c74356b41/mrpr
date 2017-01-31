@@ -148,6 +148,11 @@ textarea {
     border-right: solid 50px transparent;
 }
 
+.btn {
+    width: 100%;
+    font-size: 1em;
+}
+
 .btn:after {
     /* Icon when the collapsible content is shown */
     font-family: "Glyphicons Halflings";
