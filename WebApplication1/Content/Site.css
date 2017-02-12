@@ -44,13 +44,6 @@ p {
     background-image: url(../Content/Images/un1.jpg)
 }
 
-.mr-zero-block {
-    background-color: #FDF5E2;
-    position: relative;
-    z-index: 7;
-    color: #315668
-}
-
 .mr-zero-block:after {
     content:'';
     position: absolute;
@@ -64,12 +57,12 @@ p {
     border-right: solid 50px transparent;
 }
 
-.mr-first-block {
+.mr-third-block {
     background-color: #E1E1E1;
     position: relative;
-    z-index: 6;
+    z-index: 4;
 }
-.mr-first-block:after {
+.mr-third-block:after {
     content:'';
     position: absolute;
     top:100%;
@@ -98,13 +91,13 @@ p {
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
-.mr-third-block {
+.mr-first-block {
     background-color: #446E7A;
     position: relative;
-    z-index: 4;
+    z-index: 6;
 }
-/*
-.mr-third-block:after {
+
+.mr-first-block:after {
     content:'';
     position: absolute;
     top:100%;
@@ -116,6 +109,14 @@ p {
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
+
+.mr-zero-block {
+    background-color: #FDF5E2;
+    position: relative;
+    z-index: 7;
+    color: #315668
+}
+/*
 .mr-fourth-block {
     background-color: #ebf8fe;
     position: relative;
@@ -151,19 +152,7 @@ p {
     border-right: solid 50px transparent;
 }
     */
-.btn {
-    width: 100%;
-    font-size: 1em;
-}
-
-.btn:after {
-    /* Icon when the collapsible content is shown */
-    font-family: "Glyphicons Halflings";
-    content: "\e114";
-    float: right;
-    margin-left: 15px;
-}
-    
+        
 .btn.collapsed:after {
     /* Icon when the collapsible content is hidden */
     content: "\e080";
@@ -270,8 +259,14 @@ ul li .first::before {
     cursor: pointer;
 }
 
-.list-group-item {
-    display: list-item;
-    background: inherit;
-    border-style: none
+.bigtext {
+    font-size: 2em;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.bignumber {
+    font-size: 2em;
+    text-align: right;
+    padding-bottom: 20px;
 }
