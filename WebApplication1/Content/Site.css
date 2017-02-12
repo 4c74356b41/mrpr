@@ -253,7 +253,7 @@ ul li .second p {
     text-align: left;
 }
 
-ul li .first::after {
+ul li .first::before {
     content: '';
     position: absolute;
     right: -11.5px;
