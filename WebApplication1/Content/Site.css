@@ -44,6 +44,13 @@ p {
     background-image: url(../Content/Images/un1.jpg)
 }
 
+.mr-zero-block {
+    background-color: #FDF5E2;
+    position: relative;
+    z-index: 7;
+    color: #456E7B
+}
+
 .mr-zero-block:after {
     content:'';
     position: absolute;
@@ -57,44 +64,11 @@ p {
     border-right: solid 50px transparent;
 }
 
-.mr-third-block {
-    background-color: #E1E1E1;
-    position: relative;
-    z-index: 4;
-}
-.mr-third-block:after {
-    content:'';
-    position: absolute;
-    top:100%;
-    left: 50%;
-    margin-left: -50px;
-    width: 0;
-    height: 0;
-    border-top: solid 25px #E1E1E1;
-    border-left: solid 50px transparent;
-    border-right: solid 50px transparent;
-}
-.mr-second-block {
-    background-color: #D8F7FA;
-    position: relative;
-    z-index: 5;
-}
-.mr-second-block:after {
-    content:'';
-    position: absolute;
-    top:100%;
-    left: 50%;
-    margin-left: -50px;
-    width: 0;
-    height: 0;
-    border-top: solid 25px #D8F7FA;
-    border-left: solid 50px transparent;
-    border-right: solid 50px transparent;
-}
 .mr-first-block {
     background-color: #446E7A;
     position: relative;
     z-index: 6;
+    color: #FDF5E2
 }
 
 .mr-first-block:after {
@@ -110,12 +84,42 @@ p {
     border-right: solid 50px transparent;
 }
 
-.mr-zero-block {
-    background-color: #FDF5E2;
+.mr-second-block {
+    background-color: #E1E1E1;
     position: relative;
-    z-index: 7;
-    color: #315668
+    z-index: 5;
 }
+.mr-second-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #E1E1E1;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.mr-third-block {
+    background-color: #D7F7FA;
+    position: relative;
+    z-index: 4;
+}
+.mr-third-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #D7F7FA;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
 /*
 .mr-fourth-block {
     background-color: #ebf8fe;
@@ -206,7 +210,7 @@ ul li div {
 
 ul li .zero-left {
     position: relative;
-    color: #EB908B;
+    color: #FF524F;
     width: 30%;
     text-align: right;
     padding-right: 15px;
@@ -223,7 +227,7 @@ ul li .zero-right {
 
 ul li .first {
     position: relative;
-    color: #EB908B;
+    color: #FF524F;
     width: 30%;
     text-align: right;
     padding-right: 20px;
@@ -235,10 +239,11 @@ ul li .second {
     width: 70%;
     padding-left: 15px;
     text-align: left;
+    color: #456E7B;
 }
 
 ul li .second p {
-    color: #EB908B;
+    color: #FF524F;
     position: relative;
     text-align: left;
 }
