@@ -68,7 +68,6 @@ p {
     background-color: #456E7B;
     position: relative;
     z-index: 6;
-    color: #FDF5E2
 }
 
 .mr-first-block:after {
@@ -272,12 +271,12 @@ ul li .first::before {
     font-size: 2em;
     text-align: left;
     padding-bottom: 20px;
-    color: #FDF5E2;
+    color: #FFC6A3;
 }
 
 .bignumber {
     font-size: 2em;
     text-align: right;
     padding-bottom: 20px;
-    color: #FDF5E2;
+    color: #FFC6A3;
 }
