@@ -65,7 +65,7 @@ p {
 }
 
 .mr-first-block {
-    background-color: #446E7A;
+    background-color: #456E7B;
     position: relative;
     z-index: 6;
     color: #FDF5E2
@@ -79,7 +79,7 @@ p {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px #446E7A;
+    border-top: solid 25px #456E7B;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
@@ -118,6 +118,14 @@ p {
     border-top: solid 25px #D7F7FA;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
+}
+.toggle-me {
+    color: #3F4F4E;
+    cursor: pointer;
+}
+
+.collapse {
+    color: #3F4F4E;
 }
 
 /*
@@ -210,7 +218,7 @@ ul li div {
 
 ul li .zero-left {
     position: relative;
-    color: #FF524F;
+    color: #E1524F;
     width: 30%;
     text-align: right;
     padding-right: 15px;
@@ -219,7 +227,7 @@ ul li .zero-left {
 ul li .zero-right {
     border-left: 3px solid #3C4C4C;
     position: relative;
-    color: #3C4C4C;
+    color: #2B454E;
     width: 70%;
     padding-left: 15px;
     text-align: left;
@@ -227,7 +235,7 @@ ul li .zero-right {
 
 ul li .first {
     position: relative;
-    color: #FF524F;
+    color: #E1524F;
     width: 30%;
     text-align: right;
     padding-right: 20px;
@@ -239,11 +247,11 @@ ul li .second {
     width: 70%;
     padding-left: 15px;
     text-align: left;
-    color: #456E7B;
+    color: #2B454E;
 }
 
 ul li .second p {
-    color: #FF524F;
+    color: #456E7B;
     position: relative;
     text-align: left;
 }
@@ -260,18 +268,16 @@ ul li .first::before {
     z-index:9999
 }
 
-.toggle-me {
-    cursor: pointer;
-}
-
 .bigtext {
     font-size: 2em;
     text-align: left;
     padding-bottom: 20px;
+    color: #FDF5E2;
 }
 
 .bignumber {
     font-size: 2em;
     text-align: right;
     padding-bottom: 20px;
+    color: #FDF5E2;
 }
