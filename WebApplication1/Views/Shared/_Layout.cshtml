@@ -15,12 +15,9 @@
         <div class="container">
             <div class="navbar-header">
                 @Html.ActionLink("УМВ", "Index", "Home", null, null, "anchor", new { area = "" }, new { @class = "navbar-brand" })
+                <button type="button" class="btn btn-primary btn-lg navbar-brand" data-toggle="modal" data-target="#register">Порегистрируйсо!</button>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right"><li class="navbar-right"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">
-    Порегистрируйсо!
-</button></li></ul>
-            </div><!--<div class="navbar-collapse collapse">
+            <!--<div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Программа курса", "Course", "Home")</li>
                     <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>

@@ -337,7 +337,7 @@ ul li .first::before {
 }
 
 .modal {
-    top: 80%
+    top: 20%
 }
 
 body.modal-open {
