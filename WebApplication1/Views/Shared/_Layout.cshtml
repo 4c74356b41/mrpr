@@ -11,22 +11,22 @@
     @RenderSection("scripts", required: false)
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header">
-                @Html.ActionLink("УМВ", "Index", "Home", null, null, "anchor", new { area = "" }, new { @class = "navbar-brand" })
-                <button type="button" class="btn btn-primary btn-lg navbar-brand" data-toggle="modal" data-target="#register">Порегистрируйсо!</button>
+            <div class="navbar-header pull-left">
+                <div class="navbar-brand">@Html.ActionLink("УМВ", "Index", "Home", null, null, "anchor", new { area = "" }, new { @class = "navbar-brand" })</div>
             </div>
-            <!--<div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Программа курса", "Course", "Home")</li>
-                    <li>@Html.ActionLink("FAQ", "FAQ", "Home")</li>
-                    <li>@Html.ActionLink("Бонусы", "Bonus", "Home")</li>
+
+            <!-- I don't want it apart of the collapsible portion -->
+            <div class="navbar-header pull-right">
+                <ul class="nav navbar-nav pull-left">
+                    <li class="active"><button type="button" class="btn btn-primary btn-lg navbar-brand" data-toggle="modal" data-target="#register">Порегистрируйсо!</button></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right"><li class="navbar-right">@Html.ActionLink("Контакты", "Contact", "Home")</li></ul>
-            </div>-->
+            </div>
         </div>
-    </div>
+    </nav>
+
     @RenderBody()
     <div class="container body-content">
         <footer>
