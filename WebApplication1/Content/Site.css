@@ -50,7 +50,6 @@ p {
     z-index: 7;
     color: #456E7B
 }
-
 .mr-zero-block:after {
     content:'';
     position: absolute;
@@ -69,7 +68,6 @@ p {
     position: relative;
     z-index: 6;
 }
-
 .mr-first-block:after {
     content:'';
     position: absolute;
@@ -117,22 +115,15 @@ p {
     border-top: solid 25px #D7F7FA;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
-}
-.toggle-me {
-    color: #3F4F4E;
-    cursor: pointer;
+    z-index:9999
 }
 
-.collapse {
-    color: #3F4F4E;
-}
-
-/*
 .mr-fourth-block {
-    background-color: #ebf8fe;
+    background-color: #456E7B;
     position: relative;
-    z-index: 3;
+    z-index: 6;
 }
+
 .mr-fourth-block:after {
     content:'';
     position: absolute;
@@ -141,14 +132,15 @@ p {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px #ebf8fe;
+    border-top: solid 25px #456E7B;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
+
 .mr-fifth-block {
-    background-color: #FF9009;
+    background-color: #E1E1E1;
     position: relative;
-    z-index: 2;
+    z-index: 5;
 }
 .mr-fifth-block:after {
     content:'';
@@ -158,12 +150,75 @@ p {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px #FF9009;
+    border-top: solid 25px #E1E1E1;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
-    */
-        
+
+.mr-sixth-block {
+    background-color: #D7F7FA;
+    position: relative;
+    z-index: 4;
+}
+.mr-sixth-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #D7F7FA;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    z-index:9999
+}
+
+.mr-seventh-block {
+    background-color: #E1E1E1;
+    position: relative;
+    z-index: 5;
+}
+.mr-seventh-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #E1E1E1;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.mr-eighth-block {
+    background-color: #456E7B;
+    position: relative;
+    z-index: 6;
+}
+.mr-eighth-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #456E7B;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+    
+.toggle-me {
+    color: #3F4F4E;
+    cursor: pointer;
+}
+
+.collapse {
+    color: #3F4F4E;
+}
+    
 .btn.collapsed:after {
     /* Icon when the collapsible content is hidden */
     content: "\e080";
