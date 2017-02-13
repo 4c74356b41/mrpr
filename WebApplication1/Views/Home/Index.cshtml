@@ -5,7 +5,7 @@
 <section class="mr-zero-block">
     <div class="container text-center">
         <br /><br />
-        <img src="~/Content/Images/gerb.png" id="anchor"/> <br />
+        <img src="~/Content/Images/gerb.png" id="anchor" /> <br />
         УНИВЕРСИТЕТ<br />
         МУНИЦИПАЛЬНЫХ ВЫБОРОВ
         <hr style="width: 100%; color: #315668; height: 2px; background-color:#315668;" />
@@ -312,7 +312,7 @@
     <div class="container">
         <div class="row text-center">
             <br /><br />
-            <strong>5. РЕКОМЕНДАЦИИ</strong><br />
+            <h2 class="text-center" style="color:#E1E1E1">РЕКОМЕНДАЦИИ</h2>
             <div class="col-md-4 col-sm-6">Хованская<div class="circular deputat center-block"></div></div>
             <div class="col-md-4 col-sm-6">Свиридов<div class="circular deputat center-block"></div></div>
             <div class="col-md-4 col-sm-6">Борисов<div class="circular deputat center-block"></div></div>
@@ -327,7 +327,7 @@
     <div class="container">
         <div class="row text-center">
             <br /><br />
-            <strong>6. БОНУСЫ</strong>
+            <h2 class="text-center" style="color:#2B454E">БОНУСЫ</h2>
             Кроме того, Вы получите:
             Сертификат об окончании Университета муниципальных депутатов и полезные материалы:
             <ul>
@@ -344,8 +344,16 @@
     <div class="container">
         <div class="row text-center">
             <br /><br />
-            <H2>ПРЕИМУЩЕСТВА НАШЕГО УНИВЕРСИТЕТА</H2>
+            <h2 class="text-center" style="color:#FF524F">ПРЕИМУЩЕСТВА НАШЕГО УНИВЕРСИТЕТА</h2><br /><br />
             <ul>
+                <li>
+                    <div class="zero-left">
+                        &nbsp;
+                    </div>
+                    <div class="zero-right">
+                        &nbsp;
+                    </div>
+                </li>
                 <li>
                     <div class="first">
                         Мы – москвичи, хотя работали во всех регионах России
@@ -406,7 +414,7 @@
                         профессионалов;везение, простое человеческое везение!
                         И первое Ваше везение – это Ваше знакомство с нашим обучающим курсом
                         «СТАНЬ ДЕПУТАТОМ МОСКВЫ – СТРАТЕГИЯ ПОБЕДЫ».
-                        Как решить остальные проблемы – мы Вам расскажем при встрече.
+                        Как решить остальные проблемы – мы Вам расскажем при встрече.<br />&nbsp;
                     </div>
                 </li>
             </ul>
@@ -418,7 +426,7 @@
     <div class="container">
         <div class="row text-center">
             <br /><br />
-            Москва ждёт твоего решения. Помоги Москве.<br />
+            <h2 class="text-center" style="color:#2B454E">Москва ждёт твоего решения.<br /> Помоги Москве.</h2>
             Стань представителем простых москвичей во власти и гарантом наших интересов.<br />
             Вся Москва надеется на тебя!<br />
             Многие из нас задумывались: а куда идут деньги ЖКХ, почему наш дом не ремонтируют, хотя в этом году пора,
@@ -472,12 +480,55 @@
 
 <section class="mr-eighth-block">
     <div class="container">
-        <div class="row text-center">
-            <br /><br />
-            ТЕНТАКЛЫ
+        <div class="row">
+            <div class="col-lg-12">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">
+                    Порегистрируйсо!
+                </button>
+            </div>
         </div>
-    </div><br /><br />
+
+    </div>  
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 </section>
+
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">Порегистрируйсо!</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="fioy" class="col-sm-2 col-form-label">ФИО</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fioy" placeholder="Фио">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="emaily" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="emaily" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="phony" class="col-sm-2 col-form-label">Телефон</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="phony" placeholder="Телефон">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                            <button type="button" onclick="validateAndSend()" class="btn btn-primary">Зарегистрироваться</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     function getTimeRemaining(endtime) {
@@ -536,4 +587,24 @@
         var $collapse = $this.closest('.collapse-group').find('.collapse');
         $("#" + $collapse[0].id).slideToggle('fast')
     });
+</script>
+
+<script>
+    function validateAndSend() {
+        var fioy = document.getElementById('fioy').value;
+        var emaily = document.getElementById('emaily').value;
+        var phony = document.getElementById('phony').value;
+
+        var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony;
+        console.log(_url);
+
+        $.ajax({
+            type: 'get',
+            url: _url,
+            beforeSend: function (xhr) { xhr.setRequestHeader('Access-Control-Allow-Origin', '*') }
+        })
+        
+        $('#register').modal('toggle');
+        return false;
+    }
 </script>
