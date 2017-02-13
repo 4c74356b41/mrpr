@@ -211,11 +211,14 @@ p {
 }
     
 .toggle-me {
-    color: #3F4F4E;
     cursor: pointer;
 }
 
 .collapse {
+    padding: 0px;
+}
+
+.text-black-hack {
     color: #3F4F4E;
 }
     
