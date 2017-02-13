@@ -321,7 +321,7 @@ ul li .first::before {
     height: 20px;
     border-radius: 150%;
     border: 2px solid #3C4C4C;
-    background: #3C4C4C;
+    background: #E1E1E1;
     z-index:9999
 }
 
