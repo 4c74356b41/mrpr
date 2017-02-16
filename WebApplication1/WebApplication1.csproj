@@ -227,7 +227,9 @@
     <Content Include="Content\Images\rubl.png" />
     <Content Include="Content\Images\nogi.png" />
     <Content Include="Content\Images\proezdnie.jpg" />
-    <Content Include="Content\Images\i.jpg.png" />
+    <Content Include="Content\Images\i1.jpg" />
+    <Content Include="Content\Images\bossO.png" /> 
+    <Content Include="Content\Images\green-frog.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
