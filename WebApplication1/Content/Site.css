@@ -193,11 +193,30 @@ p {
 }
 
 .mr-eighth-block {
-    background-color: #E1E1E1;
     position: relative;
+    overflow: hidden;
     z-index: 20;
 }
-.mr-eighth-block:after {
+.mr-eighth-block:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 21;
+    opacity: 0.6;
+    background-image: url(../Content/Images/34754401-rock-abstract-neutral-wall-background-Stock-Photo.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/* .mr-eighth-block:after {
     content:'';
     position: absolute;
     top:100%;
@@ -208,7 +227,7 @@ p {
     border-top: solid 25px #E1E1E1;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
-}
+} */ 
     
 .toggle-me {
     cursor: pointer;
