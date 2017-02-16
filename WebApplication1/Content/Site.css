@@ -48,7 +48,8 @@ p {
     background-color: #FDF5E2;
     position: relative;
     z-index: 100;
-    color: #456E7B
+    color: #456E7B;
+    font-size: 1.5em;
 }
 .mr-zero-block:after {
     content:'';
