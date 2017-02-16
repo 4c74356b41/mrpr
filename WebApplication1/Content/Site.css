@@ -197,7 +197,7 @@ p {
     position: relative;
     z-index: 20;
 }
-.mr-eighth-block:after {
+/* .mr-eighth-block:after {
     content:'';
     position: absolute;
     top:100%;
@@ -208,7 +208,7 @@ p {
     border-top: solid 25px #E1E1E1;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
-}
+} */ 
     
 .toggle-me {
     cursor: pointer;
