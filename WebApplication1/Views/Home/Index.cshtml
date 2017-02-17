@@ -585,6 +585,7 @@
 </div>
 
 <script>
+    // get days left
     function getTimeRemaining(endtime) {
         var t = Date.parse(endtime) - Date.parse(new Date());
         var days = Math.floor(t / (1000 * 60 * 60 * 24));
@@ -594,6 +595,7 @@
         };
     }
 
+    // populate clock
     function initializeClock(id, endtime) {
         var clock = document.getElementById(id);
         var daysSpan = clock.querySelector('.days');
@@ -635,6 +637,7 @@
 </script>
 
 <script>
+    // collapses for .toggle-me blocks
     $('.toggle-me').on('click', function (e) {
         e.preventDefault();
         var $this = $(this);
@@ -644,12 +647,27 @@
 </script>
 
 <script>
+    // function call, to pass message to telegram bot
+    function populateAndSend() {
+        var fioy = document.getElementById('fioy').value;
+        var emaily = document.getElementById('emaily').value;
+        var phony = document.getElementById('phony').value;
+
+        var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony;
+
+        return $.ajax({
+            type: 'get',
+            url: _url
+        })
+    };
+    // form validation
     $('#tryitForm').validate({
         rules: {
             fioy: "required",
             emaily: {
                 required: true,
-                email: true
+                email: true,
+                async: false
             },
             phony: {
                 required: true,
@@ -663,25 +681,12 @@
             emaily: "Пожалуйста введите правильный имейл",
             phony: "Пожалуйста используйте формат 9163523523 или 79163523523"
         },
+        // handle async here
         submitHandler: function (form) {
-            $.when(populateAndSend()).then(form.submit());       
+            populateAndSend().then(function () {
+                form.submit();
+            });
         }
-        }
-    );
-    function populateAndSend() {
-        var fioy = document.getElementById('fioy').value;
-        var emaily = document.getElementById('emaily').value;
-        var phony = document.getElementById('phony').value;
-
-        var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony;
-
-        $.ajax({
-            type: 'get',
-            url: _url,
-            async: false
-        })
-
-    };
+    });
 </script>
 
-@*$('#myForm').on('submit', function () { /* AJAX */ }*@
