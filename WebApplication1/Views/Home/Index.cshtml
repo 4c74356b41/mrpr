@@ -554,7 +554,7 @@
                 <h4 class="modal-title" id="myModalLabel">ЗАРЕГИСТРРОВАТЬСЯ!</h4>
             </div>
             <div class="modal-body">
-                <form id="tryitForm">
+                <form id="tryitForm" method="post">
                     <div class="form-group row">
                         <label for="fioy" class="col-sm-2 col-form-label">ФИО</label>
                         <div class="col-sm-10">
@@ -683,9 +683,9 @@
         },
         // handle async here
         submitHandler: function (form) {
-            populateAndSend().then(function () {
-                form.submit();
-            });
+            populateAndSend();
+            $("#register").modal('toggle');
+            return false;
         }
     });
 </script>
