@@ -534,7 +534,7 @@
                     <h2 style="color:#FF524F">КОНТАКТЫ</h2><br />
                     <strong>до 01 марта 2017 года надо оставить заявку:</strong><br />
                     <strong>по телефону: <a href="tel:+74956424276">+7 495 642-42-76</a></strong><br />
-                    <strong>по е-мэйлу: </strong><a href="mailto:info@akademy-gov.ru">info@akademy-gov.ru</a><br />
+                    <strong>по email: </strong><a href="mailto:info@akademy-gov.ru">info@akademy-gov.ru</a><br />
                     <strong>Адрес: ул. Воронцовская, д.21</strong>
                 </p>
                 <br /><br />
@@ -554,28 +554,28 @@
                 <h4 class="modal-title" id="myModalLabel">ЗАРЕГИСТРРОВАТЬСЯ!</h4>
             </div>
             <div class="modal-body">
-                <form>
+                <form id="tryitForm">
                     <div class="form-group row">
                         <label for="fioy" class="col-sm-2 col-form-label">ФИО</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="fioy" placeholder="Фио">
+                            <input type="text" class="form-control" id="fioy" name="fioy" placeholder="ФИО" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="emaily" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="emaily" placeholder="Email">
+                            <input type="email" class="form-control" id="emaily" name="emaily" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="phony" class="col-sm-2 col-form-label">Телефон</label>
                         <div class="col-sm-10">
-                            <input type="tel" class="form-control" id="phony" placeholder="Телефон">
+                            <input type="tel" class="form-control" id="phony" name="phony" placeholder="Телефон" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
-                            <button type="button" onclick="validateAndSend()" class="btn btn-primary">Зарегистрироваться</button>
+                            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
                         </div>
                     </div>
                 </form>
@@ -644,23 +644,44 @@
 </script>
 
 <script>
-    function validateAndSend() {
+    $('#tryitForm').validate({
+        rules: {
+            fioy: "required",
+            emaily: {
+                required: true,
+                email: true
+            },
+            phony: {
+                required: true,
+                minlength: 10,
+                maxlength: 11,
+                number: true
+            }
+        },
+        messages: {
+            fioy: "Пожалуйста введите ФИО",
+            emaily: "Пожалуйста введите правильный имейл",
+            phony: "Пожалуйста используйте формат 9163523523 или 79163523523"
+        },
+        submitHandler: function (form) {
+            $.when(populateAndSend()).then(form.submit());       
+        }
+        }
+    );
+    function populateAndSend() {
         var fioy = document.getElementById('fioy').value;
         var emaily = document.getElementById('emaily').value;
         var phony = document.getElementById('phony').value;
 
         var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony;
-        console.log(_url);
 
         $.ajax({
             type: 'get',
             url: _url,
-            beforeSend: function (xhr) { xhr.setRequestHeader('Access-Control-Allow-Origin', '*') }
+            async: false
         })
 
-        $('#register').modal('toggle');
-        return false;
-    }
+    };
 </script>
 
 @*$('#myForm').on('submit', function () { /* AJAX */ }*@
