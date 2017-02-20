@@ -13,34 +13,10 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult FAQ()
+        public ActionResult NAD()
         {
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            return View();
-        }
-
-        public ActionResult Advantages()
-        {
-            return View();
-        }
-
-        public ActionResult Recomendations()
-        {
-            return View();
-        }
-
-        public ActionResult Bonus()
-        {
-            return View();
-        }
-
-        public ActionResult Course()
-        {
-            return View();
-        }
     }
 }

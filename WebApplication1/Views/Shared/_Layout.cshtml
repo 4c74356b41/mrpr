@@ -17,6 +17,7 @@
     <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header pull-left">
+                @Html.ActionLink("НАД", "NAD", "Home", null, null, null, new { area = "" }, new { @class = "navbar-brand" })
                 @Html.ActionLink("УМВ", "Index", "Home", null, null, "anchor", new { area = "" }, new { @class = "navbar-brand" })
             </div>
 

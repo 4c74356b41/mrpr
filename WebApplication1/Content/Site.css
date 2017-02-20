@@ -1,6 +1,6 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,10 +23,6 @@ textarea {
     max-width: 280px;
 }
 
-p {
-    margin-bottom: 0px;
-}
-
 .circular {
     width: 225px;
     height: 225px;
@@ -43,19 +39,31 @@ p {
 }
 
 .reference01 {
-    background-image: url(../Content/Images/gerb.png)
+    background-image: url('Images/dep_boush.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .reference02 {
-    background-image: url(../Content/Images/gerb.png)
+    background-image: url('Images/dep_sviri.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .reference03 {
-    background-image: url(../Content/Images/gerb.png)
+    background-image: url('Images/dep_kray.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .reference04 {
-    background-image: url(../Content/Images/gerb.png)
+    background-image: url('Images/dep_boris.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .reference05 {
@@ -71,7 +79,6 @@ p {
     position: relative;
     z-index: 100;
     color: #456E7B;
-    font-size: 1.5em;
 }
 .mr-zero-block:after {
     content:'';
@@ -371,3 +378,7 @@ ul li .first::before {
 body.modal-open {
     overflow: visible;
 }
+
+/*@media only screen and (max-width: 400px) {
+    .container { font-size: 0.9em;}
+}*/

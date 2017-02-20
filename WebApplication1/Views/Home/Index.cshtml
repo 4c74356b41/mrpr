@@ -2,10 +2,10 @@
     ViewBag.Title = "Главная";
 }
 
-<section class="mr-zero-block">
+<section class="mr-zero-block" id="anchor">
     <div class="container text-center">
         <br />
-        <img src="~/Content/Images/gerb.png" id="anchor" /> <br />
+        <img src="~/Content/Images/gerb.png" /> <br />
         УНИВЕРСИТЕТ<br />
         МУНИЦИПАЛЬНЫХ ВЫБОРОВ
         <hr style="width: 100%; color: #315668; height: 2px; background-color:#315668;" />
@@ -90,7 +90,7 @@
             </li>
             <li>
                 <div class="first">
-                    ОТ МУНИЦИПАЛЬНОГО ДЕПУТАТА НИЧЕГО НЕ ЗАВИСИТ!
+                    ОТ ДЕПУТАТА НИЧЕГО НЕ ЗАВИСИТ!
                 </div>
                 <div class="second collapse-group">
                     <p class="toggle-me">ДЕПУТАТЫ ИМЕЮТ ДОВОЛЬНО СЕРЬЕЗНЫЕ ПОЛНОМОЧИЯ, КОТОРЫМИ С НИМИ ПОДЕЛИЛАСЬ ГОРОДСКАЯ ВЛАСТЬ.  ВОТ ЧТО ОНИ КОНТРОЛИРУЮТ:</p>
@@ -346,12 +346,12 @@
         <div class="row text-center">
             <br /><br />
             <h2 class="text-center" style="color:#E1E1E1">РЕКОМЕНДАЦИИ</h2>
-            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Хованская<div class="circular reference01 center-block"></div>ЗАМЕНИ МЕНЯ</div>
-            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Свиридов<div class="circular reference02 center-block"></div>ЗАМЕНИ МЕНЯ</div>
-            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Борисов<div class="circular reference03 center-block"></div>ЗАМЕНИ МЕНЯ</div>
-            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Будник<div class="circular reference04 center-block"></div>ЗАМЕНИ МЕНЯ</div>
-            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Боушев<div class="circular reference05 center-block"></div>ЗАМЕНИ МЕНЯ</div>
-            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Викентьев<div class="circular reference06 center-block"></div>ЗАМЕНИ МЕНЯ</div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Боушев Владимир<div class="circular reference01 center-block"></div>ЗАМЕНИ МЕНЯ</div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Свиридов Илья<div class="circular reference02 center-block"></div>ЗАМЕНИ МЕНЯ</div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Краевский Михаил<div class="circular reference03 center-block"></div>ЗАМЕНИ МЕНЯ</div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom:15px">Борисов Владимир<div class="circular reference04 center-block"></div>ЗАМЕНИ МЕНЯ</div>
+            @*<div class="col-md-4 col-sm-6" style="margin-bottom:15px"><div class="circular reference05 center-block"></div></div>
+            <div class="col-md-4 col-sm-6" style="margin-bottom:15px"><div class="circular reference06 center-block"></div></div>*@
         </div>
     </div><br />    
 </section>
@@ -388,11 +388,11 @@
                 </li>
                 <li>
                     <div class="first">
-                        МЫ – МОСКВИЧИ, ХОТЯ РАБОТАЛИ ВО ВСЕХ РЕГИОНАХ РОССИИ
+                        МЫ – МОСКВИЧИ, НО РАБОТАЛИ ПО ВСЕЙ РОССИИ
                     </div>
                     <div class="second collapse-group">
                         <p class="toggle-me">МЫ БОЛЕЕ 20 ЛЕТ УЧАСТВУЕМ В ВЫБОРАХ ПО ВСЕЙ СТРАНЕ </p><br />
-                        <small class="collapse" id="reality-second-0">
+                        <small class="collapse" id="reality-second-0" style="display:inline">
                             от Калининграда до Камчатки и от Крыма до Мурманска. Мы также
                             неоднократно участвовали в московских выборах разного уровня и
                             как технологи, и как кандидаты в депутаты, поэтому среди нас
@@ -402,7 +402,7 @@
                 </li>
                 <li>
                     <div class="first">
-                        МЫ НЕ ВЧЕРА ПРИШЛИ <br />НА РЫНОК ВЫБОРОВ. 
+                        МЫ НЕ ВЧЕРА ПРИШЛИ НА РЫНОК ВЫБОРОВ. 
                     </div>
                     <div class="second collapse-group">
                         <p class="toggle-me">И ИЗБРАЛИ НЕ ОДНУ СОТНЮ ДЕПУТАТОВ</p>
@@ -433,7 +433,7 @@
                 </li>
                 <li>
                     <div class="first">
-                        Мы не являемся партийным проектом. МЫ ПРОЕКТ НАДПАРТИЙНЫЙ
+                        МЫ ПРОЕКТ НАДПАРТИЙНЫЙ
                     </div>
                     <div class="second collapse-group">
                         <p class="toggle-me">МЫ СЧИТАЕМ, ЧТО ВО ВЛАСТИ ДОЛЖНЫ БЫТЬ ПРЕДСТАВЛЕНЫ ВСЕ СЛОИ ОБЩЕСТВА</p>
@@ -601,7 +601,7 @@
         var timeinterval = setInterval(updateClock, 1000);
     }
 
-    var deadline = new Date("March 1, 2017");
+    var deadline = new Date("March 9, 2017");
     initializeClock('clockdiv', deadline);
 </script>
 
@@ -610,7 +610,7 @@
         // initialize array and populate it
         var siteWidth = [];
         siteWidth.push($(window).width() * 0.7);
-        siteWidth.push('1000');
+        siteWidth.push('1100');
 
         // find which one is smaller
         width = Math.round(Math.min.apply(null, siteWidth));
