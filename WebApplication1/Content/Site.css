@@ -168,6 +168,7 @@ textarea {
     background-color: #456E7B;
     position: relative;
     z-index: 60;
+    color: #000000;
 }
 
 .mr-fourth-block:after {
