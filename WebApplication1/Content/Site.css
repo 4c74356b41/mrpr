@@ -79,7 +79,10 @@ textarea {
 }
 
 .reference05 {
-    background-image: url(../Content/Images/gerb.png)
+    background-image: url('Images/dep_buzin.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .reference06 {
