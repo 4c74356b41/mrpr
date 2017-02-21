@@ -538,7 +538,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <h4 class="modal-title" id="myModalLabel">ЗАРЕГИСТРРОВАТЬСЯ!</h4>
+                <h4 class="modal-title" id="myModalLabel">ЗАРЕГИСТРИРОВАТЬСЯ!</h4>
             </div>
             <div class="modal-body">
                 <form id="tryitForm" method="post">
@@ -566,6 +566,20 @@
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registerOK" tabindex="-2" role="dialog" aria-labelledby="mySecondModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Спасибо за регистрацию!</h4>
+            </div>
+            <div class="modal-body">
+                С вами свяжутся в ближайшее время.<br />
+                <button type="submit" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Продолжить</button>
             </div>
         </div>
     </div>
@@ -671,7 +685,9 @@
         // handle async here
         submitHandler: function (form) {
             populateAndSend();
-            $("#register").modal('toggle');
+            $("#register").modal('toggle'); 
+            $('#registerOK').modal('toggle');
+
             return false;
         }
     });
