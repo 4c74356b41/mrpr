@@ -169,7 +169,7 @@ textarea {
     position: relative;
     z-index: 60;
     color: #000000;
-    text-shadow: 0.25px 0.25px #ffffff;
+    text-shadow: 0.4px 0.4px #ffffff;
 }
 
 .mr-fourth-block:after {
