@@ -86,7 +86,10 @@ textarea {
 }
 
 .reference06 {
-    background-image: url(../Content/Images/gerb.png)
+    background-image: url(../Content/Images/buy.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .mr-zero-block {
