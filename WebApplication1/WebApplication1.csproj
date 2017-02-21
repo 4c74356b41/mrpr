@@ -215,7 +215,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\dep_buzin.png" />
-    <Content Include="Content\Images\buy.jpg" />
+    <Content Include="Content\Images\dep_buy.jpg" />
     <Content Include="Content\Images\back8.jpg" />
     <Content Include="Content\Images\dep_boris.png" />
     <Content Include="Content\Images\dep_boush.png" />
