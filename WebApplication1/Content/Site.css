@@ -206,9 +206,10 @@ textarea {
 }
 
 .mr-sixth-block {
-    background-color: #E1E1E1;
+    background-color: #456E7B;
     position: relative;
     z-index: 40;
+    color: #ffffff;
 }
 .mr-sixth-block:after {
     content:'';
@@ -218,10 +219,9 @@ textarea {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px #E1E1E1;
+    border-top: solid 25px #456E7B;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
-    z-index:9999
 }
 
 .mr-seventh-block {
