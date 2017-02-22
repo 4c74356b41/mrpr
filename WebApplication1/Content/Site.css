@@ -5,6 +5,8 @@ body.modal-open[style] {
     padding-right: 0px !important;
 }
 
+.navbar-nav {margin: 0;}
+
 .modal::-webkit-scrollbar {
     width: 0 !important; /*removes the scrollbar but still scrollable*/
     /* reference: http://stackoverflow.com/a/26500272/2259400 */
@@ -33,6 +35,16 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.nad {
+    background: url('Images/logo_NAD.png');
+    background-size: cover;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px; /* hides the link text */
+    margin-right: 15px;
 }
 
 .circular {

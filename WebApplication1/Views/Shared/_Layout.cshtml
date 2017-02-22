@@ -17,13 +17,13 @@
     <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header pull-left">
-                @Html.ActionLink("НАД", "NAD", "Home", null, null, null, new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("_", "NAD", "Home", null, null, null, new { area = "" }, new { @class = "navbar-brand nad" })
                 @Html.ActionLink("УМВ", "Index", "Home", null, null, "anchor", new { area = "" }, new { @class = "navbar-brand" })
             </div>
 
             <!-- I don't want it apart of the collapsible portion -->
             <div class="navbar-header pull-right">
-                <ul class="nav navbar-nav pull-left">
+                <ul class="nav navbar-nav">
                     <li style="padding-right:20px"><button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#register"><span class="glyphicon glyphicon-ok"></span> ЗАПИСАТЬСЯ!</button></li>
                 </ul>
             </div>
