@@ -45,6 +45,7 @@ textarea {
     height: 50px;
     text-indent: -9999px; /* hides the link text */
     margin-right: 15px;
+    margin-left: 15px;
 }
 
 .circular {
