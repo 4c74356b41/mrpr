@@ -363,6 +363,38 @@ ul li .first {
     padding-right: 20px;
 }
 
+ul li .first::before {
+    content: '';
+    position: absolute;
+    right: -11.5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 150%;
+    border: 2px solid #3C4C4C;
+    background: #E1E1E1;
+    z-index:9999
+}
+
+ul li .first-two {
+    position: relative;
+    color: #E1524F;
+    width: 30%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+ul li .first-two::before {
+    content: '';
+    position: absolute;
+    right: -11.5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 150%;
+    border: 2px solid #3C4C4C;
+    background: #D7F7FA;
+    z-index:9999
+}
+
 ul li .second {
     border-left: 3px solid #3C4C4C;
     position: relative;
@@ -376,18 +408,6 @@ ul li .second p {
     color: #456E7B;
     position: relative;
     text-align: left;
-}
-
-ul li .first::before {
-    content: '';
-    position: absolute;
-    right: -11.5px;
-    width: 20px;
-    height: 20px;
-    border-radius: 150%;
-    border: 2px solid #3C4C4C;
-    background: #E1E1E1;
-    z-index:9999
 }
 
 .bigtext {
