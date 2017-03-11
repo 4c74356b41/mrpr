@@ -663,11 +663,12 @@
         function updateClock() {
             var t = getTimeRemaining(endtime);
 
-            daysSpan.innerHTML = t.days;
-
             if (t.total <= 0) {
-                clearInterval(timeinterval);
+                t.days = 0;
             }
+            
+            daysSpan.innerHTML = t.days;
+            
         }
 
         updateClock();
