@@ -665,10 +665,9 @@
 
             if (t.total <= 0) {
                 t.days = 0;
+                $('#colorme').css({ 'color': "red" })
             }
-            
             daysSpan.innerHTML = t.days;
-            $('#colorme').css({ 'color': "red" })
         }
 
         updateClock();
