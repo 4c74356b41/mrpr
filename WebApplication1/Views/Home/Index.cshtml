@@ -22,7 +22,7 @@
             ОСТАЛОСЬ
             <br />
             <div>
-                <span class="days"></span>
+                <span class="days" id="colorme" ></span>
                 <div class="smalltext">ДНЕЙ</div>
             </div>
             <br />ДО КОНЦА НАБОРА<br />
@@ -668,7 +668,7 @@
             }
             
             daysSpan.innerHTML = t.days;
-            
+            $('#colorme').css({ 'color': "red" })
         }
 
         updateClock();
@@ -691,7 +691,6 @@
         if (width < 360) { width = 360 }
         // set the site width
         $(".container").css("width", width + 'px');
-        console.log(width)
     }
 
     setSiteWidth();
