@@ -126,47 +126,11 @@ textarea {
 }
 
 .mr-first-block {
-    background-color: #456E7B;
+    background-color: #D7F7FA;
     position: relative;
     z-index: 90;
 }
 .mr-first-block:after {
-    content:'';
-    position: absolute;
-    top:100%;
-    left: 50%;
-    margin-left: -50px;
-    width: 0;
-    height: 0;
-    border-top: solid 25px #456E7B;
-    border-left: solid 50px transparent;
-    border-right: solid 50px transparent;
-}
-
-.mr-second-block {
-    background-color: #E1E1E1;
-    position: relative;
-    z-index: 80;
-}
-.mr-second-block:after {
-    content:'';
-    position: absolute;
-    top:100%;
-    left: 50%;
-    margin-left: -50px;
-    width: 0;
-    height: 0;
-    border-top: solid 25px #E1E1E1;
-    border-left: solid 50px transparent;
-    border-right: solid 50px transparent;
-}
-
-.mr-third-block {
-    background-color: #D7F7FA;
-    position: relative;
-    z-index: 70;
-}
-.mr-third-block:after {
     content:'';
     position: absolute;
     top:100%;
@@ -180,14 +144,13 @@ textarea {
     z-index:9999
 }
 
-.mr-fourth-block {
+.mr-second-block {
     background-color: #456E7B;
     position: relative;
-    z-index: 60;
+    z-index: 80;
     color: #ffffff;
 }
-
-.mr-fourth-block:after {
+.mr-second-block:after {
     content:'';
     position: absolute;
     top:100%;
@@ -200,10 +163,50 @@ textarea {
     border-right: solid 50px transparent;
 }
 
-.mr-fifth-block {
+.mr-third-block {
+    background-color: #FDF5E2;
+    position: relative;
+    z-index: 70;
+    color: #456E7B;
+    font-size: 1.5em;
+}
+.mr-third-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #FDF5E2;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.mr-fourth-block {
     background-color: #D7F7FA;
     position: relative;
+    z-index: 60;
+}
+.mr-fourth-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #D7F7FA;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    z-index:9999
+}
+
+.mr-fifth-block {
+    background-color: #456E7B;
+    position: relative;
     z-index: 50;
+    color: #ffffff;
 }
 .mr-fifth-block:after {
     content:'';
@@ -213,18 +216,55 @@ textarea {
     margin-left: -50px;
     width: 0;
     height: 0;
-    border-top: solid 25px #D7F7FA;
+    border-top: solid 25px #456E7B;
     border-left: solid 50px transparent;
     border-right: solid 50px transparent;
 }
 
 .mr-sixth-block {
-    background-color: #456E7B;
+    background-color: #D7F7FA;
     position: relative;
     z-index: 40;
-    color: #ffffff;
 }
 .mr-sixth-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #D7F7FA;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    z-index:9999
+}
+
+.mr-seventh-block {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 35;
+}
+.mr-seventh-block:after {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 25px #ffffff;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.mr-eighth-block {
+    background-color: #456E7B;
+    position: relative;
+    z-index: 30;
+    color: #ffffff;
+}
+.mr-eighth-block:after {
     content:'';
     position: absolute;
     top:100%;
@@ -237,30 +277,12 @@ textarea {
     border-right: solid 50px transparent;
 }
 
-.mr-seventh-block {
-    background-color: #D7F7FA;
-    position: relative;
-    z-index: 30;
-}
-.mr-seventh-block:after {
-    content:'';
-    position: absolute;
-    top:100%;
-    left: 50%;
-    margin-left: -50px;
-    width: 0;
-    height: 0;
-    border-top: solid 25px #D7F7FA;
-    border-left: solid 50px transparent;
-    border-right: solid 50px transparent;
-}
-
-.mr-eighth-block {
+.mr-ninth-block {
     position: relative;
     overflow: hidden;
     z-index: 20;
 }
-.mr-eighth-block:before {
+.mr-ninth-block:before {
     content: ' ';
     display: block;
     position: absolute;
@@ -431,7 +453,3 @@ ul li .second p {
 body.modal-open {
     overflow: visible;
 }
-
-/*@media only screen and (max-width: 400px) {
-    .container { font-size: 0.9em;}
-}*/
