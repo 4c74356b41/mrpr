@@ -5,7 +5,13 @@ body.modal-open[style] {
     padding-right: 0px !important;
 }
 
-.navbar-nav {margin: 0;}
+.navbar-nav {
+    margin: 0;
+}
+.navbar-nav li .a {
+        margin: 1px;
+        padding: 1px;
+    }
 
 .modal::-webkit-scrollbar {
     width: 0 !important; /*removes the scrollbar but still scrollable*/
@@ -19,8 +25,8 @@ body {
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
