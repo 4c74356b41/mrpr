@@ -606,39 +606,39 @@
     </div>
 </div>
 
-#<script>
-#    // get days left
-#    function getTimeRemaining(endtime) {
-#        var t = Date.parse(endtime) - Date.parse(new Date());
-#        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-#        return {
-#            'total': t,
-#            'days': days,
-#        };
-#    }
+<script>
+    // get days left
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            'total': t,
+            'days': days,
+        };
+    }
 
- #   // populate clock
- #  function initializeClock(id, endtime) {
- #      var clock = document.getElementById(id);
- #      var daysSpan = clock.querySelector('.days');
+    // populate clock
+   function initializeClock(id, endtime) {
+       var clock = document.getElementById(id);
+       var daysSpan = clock.querySelector('.days');
 
-  #     function updateClock() {
-  #         var t = getTimeRemaining(endtime);
+       function updateClock() {
+           var t = getTimeRemaining(endtime);
 
-   #        if (t.total <= 0) {
-   #            t.days = 0;
-   #            $('#colorme').css({ 'color': "red" })
-   #        }
-   #        daysSpan.innerHTML = t.days;
-   #    }
+           if (t.total <= 0) {
+               t.days = 0;
+               $('#colorme').css({ 'color': "red" })
+           }
+           daysSpan.innerHTML = t.days;
+       }
 
-   #    updateClock();
-   #    var timeinterval = setInterval(updateClock, 1000);
-   # }
+       updateClock();
+       var timeinterval = setInterval(updateClock, 1000);
+    }
 
-   # var deadline = new Date("April 14, 2017");
-   # initializeClock('clockdiv', deadline);
-#</script>
+    var deadline = new Date("April 14, 2017");
+    initializeClock('clockdiv', deadline);
+</script>
 
 <script>
     function setSiteWidth() {
