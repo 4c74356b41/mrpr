@@ -19,14 +19,15 @@
         <hr style="width: 100%; color: #315668; height: 2px; background-color:#315668;" />
 
         <div id="clockdiv">
-            ОСТАЛОСЬ
+            Группы комплектуются по мере регистрации, на желаемый день недели, укажите его при регистрации.
+            <!--ОСТАЛОСЬ
             <br />
             <div>
                 <span class="days" id="colorme"></span>
                 <div class="smalltext">ДНЕЙ</div>
             </div>
             <br />ДО КОНЦА НАБОРА<br />
-            КАНДИДАТОВ НА ОБУЧЕНИЕ
+            КАНДИДАТОВ НА ОБУЧЕНИЕ-->
         </div>
     </div><br />
 </section>
@@ -582,6 +583,12 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label for="datereg" class="col-sm-2 col-form-label">Комментарий</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="datereg" name="datereg" placeholder="Дата Регистрации" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
                             <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
                         </div>
@@ -606,7 +613,7 @@
     </div>
 </div>
 
-<script>
+<!--<script>
     // get days left
     function getTimeRemaining(endtime) {
         var t = Date.parse(endtime) - Date.parse(new Date());
@@ -638,7 +645,7 @@
 
     var deadline = new Date("April 14, 2017");
     initializeClock('clockdiv', deadline);
-</script>
+</script>-->
 
 <script>
     function setSiteWidth() {
@@ -674,8 +681,9 @@
         var fioy = document.getElementById('fioy').value;
         var emaily = document.getElementById('emaily').value;
         var phony = document.getElementById('phony').value;
+        var datereg = document.getElementById('datereg').value;
 
-        var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony;
+        var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony + '/' + datereg;
 
         return $.ajax({
             type: 'get',
@@ -696,12 +704,17 @@
                 minlength: 10,
                 maxlength: 11,
                 number: true
+            },
+            datereg: {
+                required: true,
+                async: false
             }
         },
         messages: {
             fioy: "Пожалуйста введите ФИО",
             emaily: "Пожалуйста введите правильный имейл",
-            phony: "Пожалуйста используйте формат 9163523523 или 79163523523"
+            phony: "Пожалуйста используйте формат 9163523523 или 79163523523",
+            datereg: "Пожалуйста укажите желаемую дату обучения"
         },
         // handle async here
         submitHandler: function (form) {
