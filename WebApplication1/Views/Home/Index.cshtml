@@ -583,9 +583,15 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="datereg" class="col-sm-2 col-form-label">Дата</label>
+                        <label for="datereg" class="col-sm-2 col-form-label">День недели</label>
                         <div class="col-sm-10">
-                            <input type="date" class="form-control" id="datereg" name="datereg" placeholder="Дата Регистрации" required>
+                            <input type="text" class="form-control" id="dayreg" name="dayreg" placeholder="День недели" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="datereg" class="col-sm-2 col-form-label">Примечание</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="commentito" name="commentito" placeholder="примечание" required>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -681,9 +687,10 @@
         var fioy = document.getElementById('fioy').value;
         var emaily = document.getElementById('emaily').value;
         var phony = document.getElementById('phony').value;
-        var datereg = document.getElementById('datereg').value;
+        var dayreg = document.getElementById('datereg').value;
+        var commentito = document.getElementById('commentito').value;
 
-        var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony + '/' + datereg;
+        var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony + '/' + datereg + '/' + commentito;
 
         return $.ajax({
             type: 'get',
@@ -708,13 +715,17 @@
             datereg: {
                 required: true,
                 async: false
+            },
+            comment: {
+                required: true,
+                async: false
             }
         },
         messages: {
             fioy: "Пожалуйста введите ФИО",
             emaily: "Пожалуйста введите правильный имейл",
             phony: "Пожалуйста используйте формат 9163523523 или 79163523523",
-            datereg: "Пожалуйста укажите желаемую дату обучения"
+            dayreg: "Пожалуйста укажите желаемый день обучения"
         },
         // handle async here
         submitHandler: function (form) {
