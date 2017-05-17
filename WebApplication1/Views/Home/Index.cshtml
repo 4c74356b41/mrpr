@@ -687,10 +687,10 @@
         var fioy = document.getElementById('fioy').value;
         var emaily = document.getElementById('emaily').value;
         var phony = document.getElementById('phony').value;
-        var dayreg = document.getElementById('datereg').value;
+        var dayreg = document.getElementById('dayreg').value;
         var commentito = document.getElementById('commentito').value;
 
-        var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony + '/' + datereg + '/' + commentito;
+        var _url = 'https://pancakefu.azurewebsites.net/api/event/' + fioy + '/' + emaily + '/' + phony + '/' + dayreg + '/' + commentito;
 
         return $.ajax({
             type: 'get',
@@ -712,8 +712,7 @@
                 maxlength: 11,
                 number: true
             },
-            dayreg: "required",
-            commentito: "required"
+            dayreg: "required"
         },
         messages: {
             fioy: "Пожалуйста введите ФИО",
